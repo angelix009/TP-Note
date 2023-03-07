@@ -1,0 +1,57 @@
+/* Onglet */
+
+.menu-pannel {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+}
+
+.menu-pannel-item {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Formulaire */
+
+form label,
+form input {
+    display: block;
+}
+
+
+/* CARD */
+
+.team-card {
+    text-align: center;
+    border: #000000 1px solid;
+    border-radius: 5px;
+    width: 30%;
+    margin: 1%;
+}
+.team-card h3{
+    text-decoration: underline;
+}
+
+
+/* Erreur */
+
+.text-error {
+    color: red;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 30%;
+}
+
+.box-error {
+    border: 1px solid red;
+}

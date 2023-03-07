@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>My awesome team</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+
+        <Navbar></Navbar>
+    </div>
+
+    <script src="/src/misc/constante.js"></script>
+
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+
+
+        import Navbar from '/src/view/navbar.js';
+      
+        const app = createApp({
+            created() {
+                document.title = TITLE; 
+            },
+            
+        });
+
+   
+        app.component('Navbar', Navbar)
+           
+
+        app.mount('#app');
+      </script>
+</body>
+
+</html>
